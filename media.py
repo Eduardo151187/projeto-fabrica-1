@@ -1,18 +1,28 @@
-nome = input("Digite o nome do aluno: ")
+def calcular_media(n1, n2, n3, n4):
+    return (n1 + n2 + n3 + n4) / 4
+
+
+def classificar_media(media):
+    if media >= 7:
+        return "Aprovado(a) ✅"
+    elif media >= 5:
+        return "Recuperação ⚠️"
+    else:
+        return "Reprovado(a) ❌"
+    
+nome = input("Digite o nome do aluno: ") 
+
 
 nota1 = float(input("Digite a 1ª nota: "))
 nota2 = float(input("Digite a 2ª nota: "))
 nota3 = float(input("Digite a 3ª nota: "))
 nota4 = float(input("Digite a 4ª nota: "))
 
-media = (nota1 + nota2 + nota3 + nota4)
 
-if media >= 7.0:
-    print("Aprovado(a) ✅")
-elif media >= 5.0 and media < 7.0:
-    print("Recuperação ⚠️")
-else:
-    print("Reprovado(a) ❌")
+media = calcular_media(nota1, nota2, nota3, nota4)
+situacao = classificar_media(media)
 
 
-print(f"O aluno {nome} tem uma média de {media:.2f}")
+print(f"\nAluno: {nome}")
+print(f"Média: {media:.2f}")
+print(f"Situação: {situacao}")

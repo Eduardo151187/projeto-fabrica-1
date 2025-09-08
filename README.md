@@ -1,4 +1,3 @@
-
 # 📘 Calculadora de Média Escolar
 
 Um mini-projeto em **Python** para calcular a média das **4 notas bimestrais** de um estudante. Foco em praticar **entrada de dados**, **operações matemáticas** e **exibição formatada**.
@@ -60,37 +59,3 @@ Sem dependências externas. Use o próprio `unittest` do Python:
 ```bash
 python -m unittest
 ```
-
----
-
-## 🧠 Conceitos trabalhados
-- Entrada de dados com `input()`
-- Conversão e validação de `float`
-- Funções puras e testáveis (`calcular_media`, `classificar_media`)
-- Formatação de saída com f-strings
-- Organização de projeto e **README**
-
----
-
-## 🚀 Extensões sugeridas
-- Permitir **n** notas (não só 4).
-- Salvar histórico de médias em um arquivo `.csv`.
-
----
-
-## 📂 Estrutura do projeto
-```
-projeto-fabrica-1/
-├─ media.py
-├─ README.md
-├─ tests/
-│  └─ test_media.py
-├─ .gitignore
-└─ LICENSE
-```
-
----
-
-## 📝 Licença
-Este projeto está sob licença **MIT** — sinta-se à vontade para usar e adaptar em suas aulas. ✨
-
